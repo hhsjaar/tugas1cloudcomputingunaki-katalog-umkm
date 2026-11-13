@@ -1,0 +1,27 @@
+# Rancangan pengembangan (soal 7b): 2 replika aplikasi + Nginx sebagai load balancer.
+# Jalankan: docker compose up -d
+# Ganti hhsjaar dengan username Docker Hub Anda.
+
+services:
+  app1:
+    image: hhsjaar/katalog-umkm:v1.0
+    restart: unless-stopped
+    environment:
+      - APP_VERSION=v1.0
+
+  app2:
+    image: hhsjaar/katalog-umkm:v1.0
+    restart: unless-stopped
+    environment:
+      - APP_VERSION=v1.0
+
+  lb:
+    image: nginx:stable-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - app1
+      - app2
+    restart: unless-stopped

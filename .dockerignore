@@ -1,0 +1,26 @@
+# Dependensi lokal: dibangun ulang di dalam image
+node_modules
+npm-debug.log*
+
+# Berkas Git dan editor
+.git
+.gitignore
+.vscode
+.idea
+*.swp
+
+# Berkas rahasia: jangan pernah masuk ke image
+.env
+.env.*
+*.pem
+*.key
+
+# Berkas yang tidak dibutuhkan saat runtime
+Dockerfile
+.dockerignore
+docker-compose.yml
+nginx
+README.md
+docs
+screenshots
+*.zip

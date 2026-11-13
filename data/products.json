@@ -1,0 +1,8 @@
+[
+  { "id": 1, "nama": "Keripik Singkong Pedas", "kategori": "Makanan Ringan", "harga": 15000, "stok": 120, "icon": "🌶️" },
+  { "id": 2, "nama": "Kopi Bubuk Robusta 250 g", "kategori": "Minuman", "harga": 35000, "stok": 60, "icon": "☕" },
+  { "id": 3, "nama": "Sambal Bawang Botol", "kategori": "Bumbu", "harga": 22000, "stok": 85, "icon": "🫙" },
+  { "id": 4, "nama": "Tas Anyaman Pandan", "kategori": "Kerajinan", "harga": 75000, "stok": 25, "icon": "👜" },
+  { "id": 5, "nama": "Madu Hutan 500 ml", "kategori": "Minuman", "harga": 90000, "stok": 40, "icon": "🍯" },
+  { "id": 6, "nama": "Batik Tulis Motif Parang", "kategori": "Fesyen", "harga": 250000, "stok": 12, "icon": "👘" }
+]
